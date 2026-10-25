@@ -14,10 +14,17 @@ spec:
     spec:
       containers:
         - name: brain-tasks-app
-          image: 629845796956.dkr.ecr.us-east-1.amazonaws.com/brain-tasks-app
+          image: IMAGE_PLACEHOLDER
           ports:
             - containerPort: 3000
           readinessProbe:
             httpGet:
               path: /
               port: 3000
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 250m
+              memory: 256Mi
