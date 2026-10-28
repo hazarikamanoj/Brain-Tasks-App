@@ -1,7 +1,3 @@
-# Brain-Tasks-App: CI/CD on AWS (ECR, EKS, Jenkins, CodePipeline)
-
-**Submitted by:** [Your name] | **Date:** October 2026
-
 This project containerizes the Brain Tasks web app (a prebuilt Vite `dist/` bundle), stores the image in **Amazon ECR**, deploys it to **Amazon EKS** behind a **Classic Load Balancer on port 3000**, and automates build and deploy with **Jenkins** and **AWS CodePipeline**. Monitoring uses **CloudWatch Container Insights**.
 
 > AWS CodeBuild could not be used because the account had a concurrent-build quota of 0 (see [Troubleshooting](#14-troubleshooting-and-lessons-learned)). As agreed with my mentor, Jenkins performs the build stage.
